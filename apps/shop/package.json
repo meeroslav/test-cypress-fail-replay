@@ -3,21 +3,28 @@
   "version": "0.0.1",
   "private": true,
   "nx": {
-    "tags": ["scope:shop"],
+    "tags": [
+      "scope:shop"
+    ],
     "targets": {
       "serve": {
-        "dependsOn": ["@org/api:serve"]
+        "dependsOn": [
+          "@org/api:serve"
+        ]
       },
       "preview": {
-        "dependsOn": ["build", "@org/api:serve"]
+        "dependsOn": [
+          "build",
+          "@org/api:serve"
+        ]
       }
     }
   },
   "devDependencies": {
-    "@org/models": "*",
-    "@org/shop-data": "*",
-    "@org/shop-feature-product-detail": "*",
-    "@org/shop-feature-products": "*",
-    "@org/shop-shared-ui": "*"
+    "@org/models": "workspace:*",
+    "@org/shop-data": "workspace:*",
+    "@org/shop-feature-product-detail": "workspace:*",
+    "@org/shop-feature-products": "workspace:*",
+    "@org/shop-shared-ui": "workspace:*"
   }
 }
