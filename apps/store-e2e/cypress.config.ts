@@ -13,6 +13,7 @@ export default defineConfig({
       ciWebServerCommand: 'pnpm exec nx run store:preview',
       ciBaseUrl: 'http://localhost:4200',
     }),
+    screenshotsFolder: 'dist/cypress/apps/store-e2e/screenshots',
     baseUrl: 'http://localhost:4200',
   },
 });
