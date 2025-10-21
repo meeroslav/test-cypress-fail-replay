@@ -61,3 +61,5 @@ jobs:
       #   if: always()
       - run: tree -L 2 dist
         if: always()
+      - run: tree -L 2 apps/store-e2e
+        if: always()
