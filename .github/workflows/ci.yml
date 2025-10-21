@@ -59,7 +59,5 @@ jobs:
       # Nx Cloud recommends fixes for failures to help you get CI green faster. Learn more: https://nx.dev/ci/features/self-healing-ci
       # - run: pnpm nx fix-ci
       #   if: always()
-      - run: tree -L 2 dist
-        if: always()
-      - run: tree -L 2 apps/store-e2e
+      - run: tree -L 5 apps/store-e2e/dist/cypress/apps/store-e2e
         if: always()
