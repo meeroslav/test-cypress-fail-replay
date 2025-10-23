@@ -61,3 +61,5 @@ jobs:
       #   if: always()
       - run: tree -L 5 apps/store-e2e/dist/cypress/apps/store-e2e
         if: always()
+      - run: tree -L 5 apps/shop-e2e/test-output
+        if: always()
